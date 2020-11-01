@@ -101,8 +101,9 @@
 			children = (
 				12F9BF36254ECF5A00B95855 /* AppDelegate.swift */,
 				12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */,
-				12F9BF3A254ECF5A00B95855 /* ViewController.swift */,
-				12F9BF3C254ECF5A00B95855 /* Main.storyboard */,
+				12F9BF6B254EE93900B95855 /* Model */,
+				12F9BF6A254EE92A00B95855 /* View */,
+				12F9BF69254EE91F00B95855 /* Controller */,
 				12F9BF3F254ECF5C00B95855 /* Assets.xcassets */,
 				12F9BF41254ECF5C00B95855 /* LaunchScreen.storyboard */,
 				12F9BF44254ECF5C00B95855 /* Info.plist */,
@@ -126,6 +127,29 @@
 				12F9BF5A254ECF5C00B95855 /* Info.plist */,
 			);
 			path = "KAIST_Bus-iOSUITests";
+			sourceTree = "<group>";
+		};
+		12F9BF69254EE91F00B95855 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12F9BF3A254ECF5A00B95855 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		12F9BF6A254EE92A00B95855 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12F9BF3C254ECF5A00B95855 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12F9BF6B254EE93900B95855 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
