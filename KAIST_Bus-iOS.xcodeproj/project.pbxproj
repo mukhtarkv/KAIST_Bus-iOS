@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF36254ECF5A00B95855 /* AppDelegate.swift */; };
+		12F9BF39254ECF5A00B95855 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */; };
+		12F9BF3B254ECF5A00B95855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF3A254ECF5A00B95855 /* ViewController.swift */; };
+		12F9BF3E254ECF5A00B95855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F9BF3C254ECF5A00B95855 /* Main.storyboard */; };
+		12F9BF40254ECF5C00B95855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F9BF3F254ECF5C00B95855 /* Assets.xcassets */; };
+		12F9BF43254ECF5C00B95855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F9BF41254ECF5C00B95855 /* LaunchScreen.storyboard */; };
+		12F9BF4E254ECF5C00B95855 /* KAIST_Bus_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF4D254ECF5C00B95855 /* KAIST_Bus_iOSTests.swift */; };
+		12F9BF59254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF58254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12F9BF4A254ECF5C00B95855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F9BF2B254ECF5A00B95855 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F9BF32254ECF5A00B95855;
+			remoteInfo = "KAIST_Bus-iOS";
+		};
+		12F9BF55254ECF5C00B95855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F9BF2B254ECF5A00B95855 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F9BF32254ECF5A00B95855;
+			remoteInfo = "KAIST_Bus-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12F9BF33254ECF5A00B95855 /* KAIST_Bus-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KAIST_Bus-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F9BF36254ECF5A00B95855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		12F9BF3A254ECF5A00B95855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12F9BF3D254ECF5A00B95855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12F9BF3F254ECF5C00B95855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12F9BF42254ECF5C00B95855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12F9BF44254ECF5C00B95855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F9BF49254ECF5C00B95855 /* KAIST_Bus-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KAIST_Bus-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F9BF4D254ECF5C00B95855 /* KAIST_Bus_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAIST_Bus_iOSTests.swift; sourceTree = "<group>"; };
+		12F9BF4F254ECF5C00B95855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F9BF54254ECF5C00B95855 /* KAIST_Bus-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KAIST_Bus-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F9BF58254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAIST_Bus_iOSUITests.swift; sourceTree = "<group>"; };
+		12F9BF5A254ECF5C00B95855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12F9BF30254ECF5A00B95855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9BF46254ECF5C00B95855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9BF51254ECF5C00B95855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F9BF2A254ECF5A00B95855 = {
+			isa = PBXGroup;
+			children = (
+				12F9BF35254ECF5A00B95855 /* KAIST_Bus-iOS */,
+				12F9BF4C254ECF5C00B95855 /* KAIST_Bus-iOSTests */,
+				12F9BF57254ECF5C00B95855 /* KAIST_Bus-iOSUITests */,
+				12F9BF34254ECF5A00B95855 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12F9BF34254ECF5A00B95855 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F9BF33254ECF5A00B95855 /* KAIST_Bus-iOS.app */,
+				12F9BF49254ECF5C00B95855 /* KAIST_Bus-iOSTests.xctest */,
+				12F9BF54254ECF5C00B95855 /* KAIST_Bus-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12F9BF35254ECF5A00B95855 /* KAIST_Bus-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				12F9BF36254ECF5A00B95855 /* AppDelegate.swift */,
+				12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */,
+				12F9BF3A254ECF5A00B95855 /* ViewController.swift */,
+				12F9BF3C254ECF5A00B95855 /* Main.storyboard */,
+				12F9BF3F254ECF5C00B95855 /* Assets.xcassets */,
+				12F9BF41254ECF5C00B95855 /* LaunchScreen.storyboard */,
+				12F9BF44254ECF5C00B95855 /* Info.plist */,
+			);
+			path = "KAIST_Bus-iOS";
+			sourceTree = "<group>";
+		};
+		12F9BF4C254ECF5C00B95855 /* KAIST_Bus-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				12F9BF4D254ECF5C00B95855 /* KAIST_Bus_iOSTests.swift */,
+				12F9BF4F254ECF5C00B95855 /* Info.plist */,
+			);
+			path = "KAIST_Bus-iOSTests";
+			sourceTree = "<group>";
+		};
+		12F9BF57254ECF5C00B95855 /* KAIST_Bus-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12F9BF58254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift */,
+				12F9BF5A254ECF5C00B95855 /* Info.plist */,
+			);
+			path = "KAIST_Bus-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12F9BF32254ECF5A00B95855 /* KAIST_Bus-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F9BF5D254ECF5C00B95855 /* Build configuration list for PBXNativeTarget "KAIST_Bus-iOS" */;
+			buildPhases = (
+				12F9BF2F254ECF5A00B95855 /* Sources */,
+				12F9BF30254ECF5A00B95855 /* Frameworks */,
+				12F9BF31254ECF5A00B95855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KAIST_Bus-iOS";
+			productName = "KAIST_Bus-iOS";
+			productReference = 12F9BF33254ECF5A00B95855 /* KAIST_Bus-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12F9BF48254ECF5C00B95855 /* KAIST_Bus-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F9BF60254ECF5C00B95855 /* Build configuration list for PBXNativeTarget "KAIST_Bus-iOSTests" */;
+			buildPhases = (
+				12F9BF45254ECF5C00B95855 /* Sources */,
+				12F9BF46254ECF5C00B95855 /* Frameworks */,
+				12F9BF47254ECF5C00B95855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12F9BF4B254ECF5C00B95855 /* PBXTargetDependency */,
+			);
+			name = "KAIST_Bus-iOSTests";
+			productName = "KAIST_Bus-iOSTests";
+			productReference = 12F9BF49254ECF5C00B95855 /* KAIST_Bus-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12F9BF53254ECF5C00B95855 /* KAIST_Bus-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F9BF63254ECF5C00B95855 /* Build configuration list for PBXNativeTarget "KAIST_Bus-iOSUITests" */;
+			buildPhases = (
+				12F9BF50254ECF5C00B95855 /* Sources */,
+				12F9BF51254ECF5C00B95855 /* Frameworks */,
+				12F9BF52254ECF5C00B95855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12F9BF56254ECF5C00B95855 /* PBXTargetDependency */,
+			);
+			name = "KAIST_Bus-iOSUITests";
+			productName = "KAIST_Bus-iOSUITests";
+			productReference = 12F9BF54254ECF5C00B95855 /* KAIST_Bus-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12F9BF2B254ECF5A00B95855 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					12F9BF32254ECF5A00B95855 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					12F9BF48254ECF5C00B95855 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 12F9BF32254ECF5A00B95855;
+					};
+					12F9BF53254ECF5C00B95855 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 12F9BF32254ECF5A00B95855;
+					};
+				};
+			};
+			buildConfigurationList = 12F9BF2E254ECF5A00B95855 /* Build configuration list for PBXProject "KAIST_Bus-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12F9BF2A254ECF5A00B95855;
+			productRefGroup = 12F9BF34254ECF5A00B95855 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12F9BF32254ECF5A00B95855 /* KAIST_Bus-iOS */,
+				12F9BF48254ECF5C00B95855 /* KAIST_Bus-iOSTests */,
+				12F9BF53254ECF5C00B95855 /* KAIST_Bus-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12F9BF31254ECF5A00B95855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9BF43254ECF5C00B95855 /* LaunchScreen.storyboard in Resources */,
+				12F9BF40254ECF5C00B95855 /* Assets.xcassets in Resources */,
+				12F9BF3E254ECF5A00B95855 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9BF47254ECF5C00B95855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9BF52254ECF5C00B95855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12F9BF2F254ECF5A00B95855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9BF3B254ECF5A00B95855 /* ViewController.swift in Sources */,
+				12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */,
+				12F9BF39254ECF5A00B95855 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9BF45254ECF5C00B95855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9BF4E254ECF5C00B95855 /* KAIST_Bus_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9BF50254ECF5C00B95855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9BF59254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12F9BF4B254ECF5C00B95855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F9BF32254ECF5A00B95855 /* KAIST_Bus-iOS */;
+			targetProxy = 12F9BF4A254ECF5C00B95855 /* PBXContainerItemProxy */;
+		};
+		12F9BF56254ECF5C00B95855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F9BF32254ECF5A00B95855 /* KAIST_Bus-iOS */;
+			targetProxy = 12F9BF55254ECF5C00B95855 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12F9BF3C254ECF5A00B95855 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F9BF3D254ECF5A00B95855 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12F9BF41254ECF5C00B95855 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F9BF42254ECF5C00B95855 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12F9BF5B254ECF5C00B95855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12F9BF5C254ECF5C00B95855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12F9BF5E254ECF5C00B95855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 653VRT8LX6;
+				INFOPLIST_FILE = "KAIST_Bus-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mukhtar.KAIST-Bus-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12F9BF5F254ECF5C00B95855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 653VRT8LX6;
+				INFOPLIST_FILE = "KAIST_Bus-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mukhtar.KAIST-Bus-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12F9BF61254ECF5C00B95855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 653VRT8LX6;
+				INFOPLIST_FILE = "KAIST_Bus-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mukhtar.KAIST-Bus-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAIST_Bus-iOS.app/KAIST_Bus-iOS";
+			};
+			name = Debug;
+		};
+		12F9BF62254ECF5C00B95855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 653VRT8LX6;
+				INFOPLIST_FILE = "KAIST_Bus-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mukhtar.KAIST-Bus-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAIST_Bus-iOS.app/KAIST_Bus-iOS";
+			};
+			name = Release;
+		};
+		12F9BF64254ECF5C00B95855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 653VRT8LX6;
+				INFOPLIST_FILE = "KAIST_Bus-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mukhtar.KAIST-Bus-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KAIST_Bus-iOS";
+			};
+			name = Debug;
+		};
+		12F9BF65254ECF5C00B95855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 653VRT8LX6;
+				INFOPLIST_FILE = "KAIST_Bus-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mukhtar.KAIST-Bus-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KAIST_Bus-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12F9BF2E254ECF5A00B95855 /* Build configuration list for PBXProject "KAIST_Bus-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F9BF5B254ECF5C00B95855 /* Debug */,
+				12F9BF5C254ECF5C00B95855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F9BF5D254ECF5C00B95855 /* Build configuration list for PBXNativeTarget "KAIST_Bus-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F9BF5E254ECF5C00B95855 /* Debug */,
+				12F9BF5F254ECF5C00B95855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F9BF60254ECF5C00B95855 /* Build configuration list for PBXNativeTarget "KAIST_Bus-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F9BF61254ECF5C00B95855 /* Debug */,
+				12F9BF62254ECF5C00B95855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F9BF63254ECF5C00B95855 /* Build configuration list for PBXNativeTarget "KAIST_Bus-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F9BF64254ECF5C00B95855 /* Debug */,
+				12F9BF65254ECF5C00B95855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12F9BF2B254ECF5A00B95855 /* Project object */;
+}
