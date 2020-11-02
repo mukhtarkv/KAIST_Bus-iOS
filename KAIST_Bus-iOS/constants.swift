@@ -10,4 +10,5 @@ import Foundation
 struct K {
     static let appName = "KAIST Bus"
     static let cellIdentifier = "ReusableCell"
+    static let cellNibName = "TimetableCell"
 }

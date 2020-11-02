@@ -17,6 +17,8 @@
 		12F9BF59254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF58254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift */; };
 		12F9BF7025501FDB00B95855 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF6F25501FDB00B95855 /* Timetable.swift */; };
 		12F9BF752550258D00B95855 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF742550258D00B95855 /* constants.swift */; };
+		12F9BF7B25502F0800B95855 /* TimetableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF7925502F0800B95855 /* TimetableCell.swift */; };
+		12F9BF7C25502F0800B95855 /* TimetableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F9BF7A25502F0800B95855 /* TimetableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		12F9BF5A254ECF5C00B95855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F9BF6F25501FDB00B95855 /* Timetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timetable.swift; sourceTree = "<group>"; };
 		12F9BF742550258D00B95855 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		12F9BF7925502F0800B95855 /* TimetableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableCell.swift; sourceTree = "<group>"; };
+		12F9BF7A25502F0800B95855 /* TimetableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimetableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				12F9BF3C254ECF5A00B95855 /* Main.storyboard */,
+				12F9BF7925502F0800B95855 /* TimetableCell.swift */,
+				12F9BF7A25502F0800B95855 /* TimetableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F9BF43254ECF5C00B95855 /* LaunchScreen.storyboard in Resources */,
+				12F9BF7C25502F0800B95855 /* TimetableCell.xib in Resources */,
 				12F9BF40254ECF5C00B95855 /* Assets.xcassets in Resources */,
 				12F9BF3E254ECF5A00B95855 /* Main.storyboard in Resources */,
 			);
@@ -289,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F9BF3B254ECF5A00B95855 /* ViewController.swift in Sources */,
+				12F9BF7B25502F0800B95855 /* TimetableCell.swift in Sources */,
 				12F9BF7025501FDB00B95855 /* Timetable.swift in Sources */,
 				12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */,
 				12F9BF752550258D00B95855 /* constants.swift in Sources */,

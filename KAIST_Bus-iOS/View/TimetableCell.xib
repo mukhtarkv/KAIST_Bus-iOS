@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="45" id="KGk-i7-Jjw" customClass="TimetableCell" customModule="KAIST_Bus_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9A-Yn-h92">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUg-LS-ue3">
+                                <rect key="frame" x="10" y="10" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uk-6e-7rM">
+                                <rect key="frame" x="107" y="10" width="48.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uUg-LS-ue3" firstAttribute="leading" secondItem="b9A-Yn-h92" secondAttribute="leading" constant="10" id="7dR-L5-Z57"/>
+                            <constraint firstAttribute="trailing" secondItem="9Uk-6e-7rM" secondAttribute="trailing" constant="10" id="BrU-0q-yh3"/>
+                            <constraint firstAttribute="bottom" secondItem="uUg-LS-ue3" secondAttribute="bottom" constant="10" id="MdS-Rs-CsK"/>
+                            <constraint firstAttribute="bottom" secondItem="9Uk-6e-7rM" secondAttribute="bottom" constant="10" id="Zw1-wQ-JuJ"/>
+                            <constraint firstItem="9Uk-6e-7rM" firstAttribute="leading" secondItem="uUg-LS-ue3" secondAttribute="trailing" constant="20" id="dKw-zc-OOW"/>
+                            <constraint firstItem="uUg-LS-ue3" firstAttribute="top" secondItem="b9A-Yn-h92" secondAttribute="top" constant="10" id="gHW-Fx-oAp"/>
+                            <constraint firstItem="9Uk-6e-7rM" firstAttribute="top" secondItem="b9A-Yn-h92" secondAttribute="top" constant="10" id="ppj-Y0-44j"/>
+                            <constraint firstItem="9Uk-6e-7rM" firstAttribute="leading" secondItem="uUg-LS-ue3" secondAttribute="trailing" constant="20" id="sc9-iu-1i7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrivalTimeLabel" destination="9Uk-6e-7rM" id="bzX-QA-FdY"/>
+                <outlet property="departureTimeLabel" destination="uUg-LS-ue3" id="Qg2-1j-nXu"/>
+                <outlet property="timetableCell" destination="b9A-Yn-h92" id="zJe-F7-rtm"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="84.709821428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
