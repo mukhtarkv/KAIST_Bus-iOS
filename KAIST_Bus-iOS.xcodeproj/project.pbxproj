@@ -15,6 +15,8 @@
 		12F9BF43254ECF5C00B95855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F9BF41254ECF5C00B95855 /* LaunchScreen.storyboard */; };
 		12F9BF4E254ECF5C00B95855 /* KAIST_Bus_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF4D254ECF5C00B95855 /* KAIST_Bus_iOSTests.swift */; };
 		12F9BF59254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF58254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift */; };
+		12F9BF7025501FDB00B95855 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF6F25501FDB00B95855 /* Timetable.swift */; };
+		12F9BF752550258D00B95855 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF742550258D00B95855 /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		12F9BF54254ECF5C00B95855 /* KAIST_Bus-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KAIST_Bus-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F9BF58254ECF5C00B95855 /* KAIST_Bus_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAIST_Bus_iOSUITests.swift; sourceTree = "<group>"; };
 		12F9BF5A254ECF5C00B95855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F9BF6F25501FDB00B95855 /* Timetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timetable.swift; sourceTree = "<group>"; };
+		12F9BF742550258D00B95855 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				12F9BF3F254ECF5C00B95855 /* Assets.xcassets */,
 				12F9BF41254ECF5C00B95855 /* LaunchScreen.storyboard */,
 				12F9BF44254ECF5C00B95855 /* Info.plist */,
+				12F9BF742550258D00B95855 /* constants.swift */,
 			);
 			path = "KAIST_Bus-iOS";
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 		12F9BF6B254EE93900B95855 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12F9BF6F25501FDB00B95855 /* Timetable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F9BF3B254ECF5A00B95855 /* ViewController.swift in Sources */,
+				12F9BF7025501FDB00B95855 /* Timetable.swift in Sources */,
 				12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */,
+				12F9BF752550258D00B95855 /* constants.swift in Sources */,
 				12F9BF39254ECF5A00B95855 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

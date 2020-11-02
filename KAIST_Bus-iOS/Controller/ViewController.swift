@@ -8,15 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var firstProgramTextField: UITextField!
     
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        firstProgramTextField.text = "Hello World"
+        tableView.dataSource = self
     }
+}
 
-
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Timetable.munjiToMainWeekends.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        cell.textLabel?.text = Timetable.munjiToMainWeekends[indexPath.row].0
+        return cell
+    }
+    
+    
 }
 
