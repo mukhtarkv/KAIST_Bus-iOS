@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func timetableButtonPressed(_ sender: UIButton) {
-        print("Button pressed")
         if weekends {
             weekends = false
             timetable = Timetable.munjiToMainWeekdays
@@ -31,6 +30,7 @@ class ViewController: UIViewController {
             weekends = true
             timetable = Timetable.munjiToMainWeekends
         }
+        tableView.reloadData()
     }
 }
 

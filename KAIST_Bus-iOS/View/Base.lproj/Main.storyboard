@@ -30,7 +30,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="timetableButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GF2-ob-DVW"/>
+                                    <action selector="timetableButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdQ-RQ-zUn"/>
                                 </connections>
                             </button>
                         </subviews>
