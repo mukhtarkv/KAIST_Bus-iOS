@@ -16,33 +16,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9A-Yn-h92">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9A-Yn-h92">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUg-LS-ue3">
-                                <rect key="frame" x="10" y="10" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uk-6e-7rM">
-                                <rect key="frame" x="107" y="10" width="48.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="In6-tz-2Y6">
+                                <rect key="frame" x="10" y="10" width="145.5" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUg-LS-ue3">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uk-6e-7rM">
+                                        <rect key="frame" x="97" y="0.0" width="48.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Uk-6e-7rM" firstAttribute="leading" secondItem="uUg-LS-ue3" secondAttribute="trailing" constant="20" id="EvK-Ug-k60"/>
+                                    <constraint firstItem="9Uk-6e-7rM" firstAttribute="leading" secondItem="uUg-LS-ue3" secondAttribute="trailing" constant="20" id="Rvy-lR-W5N"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="uUg-LS-ue3" firstAttribute="leading" secondItem="b9A-Yn-h92" secondAttribute="leading" constant="10" id="7dR-L5-Z57"/>
-                            <constraint firstAttribute="trailing" secondItem="9Uk-6e-7rM" secondAttribute="trailing" constant="10" id="BrU-0q-yh3"/>
-                            <constraint firstAttribute="bottom" secondItem="uUg-LS-ue3" secondAttribute="bottom" constant="10" id="MdS-Rs-CsK"/>
-                            <constraint firstAttribute="bottom" secondItem="9Uk-6e-7rM" secondAttribute="bottom" constant="10" id="Zw1-wQ-JuJ"/>
-                            <constraint firstItem="9Uk-6e-7rM" firstAttribute="leading" secondItem="uUg-LS-ue3" secondAttribute="trailing" constant="20" id="dKw-zc-OOW"/>
-                            <constraint firstItem="uUg-LS-ue3" firstAttribute="top" secondItem="b9A-Yn-h92" secondAttribute="top" constant="10" id="gHW-Fx-oAp"/>
-                            <constraint firstItem="9Uk-6e-7rM" firstAttribute="top" secondItem="b9A-Yn-h92" secondAttribute="top" constant="10" id="ppj-Y0-44j"/>
-                            <constraint firstItem="9Uk-6e-7rM" firstAttribute="leading" secondItem="uUg-LS-ue3" secondAttribute="trailing" constant="20" id="sc9-iu-1i7"/>
-                        </constraints>
                     </view>
                 </subviews>
             </tableViewCellContentView>
