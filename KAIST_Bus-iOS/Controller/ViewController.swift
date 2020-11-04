@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var timetableButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var timetable: [(String, String)] = Timetable.munjiToMainWeekends
     var weekends: Bool = true
@@ -19,18 +18,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
-    }
-    
-    
-    @IBAction func timetableButtonPressed(_ sender: UIButton) {
-        if weekends {
-            weekends = false
-            timetable = Timetable.munjiToMainWeekdays
-        } else {
-            weekends = true
-            timetable = Timetable.munjiToMainWeekends
-        }
-        tableView.reloadData()
     }
 }
 
