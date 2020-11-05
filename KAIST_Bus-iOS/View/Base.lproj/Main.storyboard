@@ -16,31 +16,116 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wf-YD-Ryx" customClass="DropDown" customModule="iOSDropDown">
-                                <rect key="frame" x="29" y="133" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-GJ-nEr" customClass="DropDown" customModule="iOSDropDown">
-                                <rect key="frame" x="262" y="133" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-mI-8iP">
-                                <rect key="frame" x="161" y="139" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="arrow.left.arrow.right.circle.fill" catalog="system"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="227" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-cE-vFe" userLabel="MenuLabels">
+                                <rect key="frame" x="30" y="84" width="354" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZb-Xa-8s6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="b4l-hQ-96v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03p-g4-wUb">
+                                        <rect key="frame" x="277" y="0.0" width="77" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4tS-9S-xux"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="03p-g4-wUb" firstAttribute="leading" secondItem="bzV-cE-vFe" secondAttribute="centerX" constant="100" id="Gs2-86-8Mu"/>
+                                    <constraint firstItem="zZb-Xa-8s6" firstAttribute="trailing" secondItem="bzV-cE-vFe" secondAttribute="centerX" constant="20" id="JbK-o9-FHE"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="uJd-UB-Hmj" userLabel="DropDownMenus">
+                                <rect key="frame" x="10" y="109.5" width="394" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wf-YD-Ryx" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-mI-8iP">
+                                        <rect key="frame" x="182" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="VQ1-ij-5Z9"/>
+                                            <constraint firstAttribute="height" constant="30" id="mBy-J6-9Le"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="arrow.left.arrow.right.circle.fill" catalog="system"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-GJ-nEr" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="243" y="0.0" width="151" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="alJ-GJ-nEr" secondAttribute="trailing" id="W4z-VE-rac"/>
+                                    <constraint firstItem="CD6-mI-8iP" firstAttribute="centerX" secondItem="uJd-UB-Hmj" secondAttribute="centerX" id="YDc-Qv-q4z"/>
+                                    <constraint firstItem="alJ-GJ-nEr" firstAttribute="leading" secondItem="CD6-mI-8iP" secondAttribute="trailing" constant="20" id="sKN-ls-DHI"/>
+                                    <constraint firstItem="6wf-YD-Ryx" firstAttribute="leading" secondItem="uJd-UB-Hmj" secondAttribute="leading" id="unT-Rf-rTM"/>
+                                    <constraint firstItem="CD6-mI-8iP" firstAttribute="leading" secondItem="6wf-YD-Ryx" secondAttribute="trailing" constant="20" id="znQ-fe-UiM"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="225" translatesAutoresizingMaskIntoConstraints="NO" id="6MZ-DU-sBi" userLabel="TimetableColumns">
+                                <rect key="frame" x="30" y="159.5" width="354" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Leave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-Vu-zaT">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Arrive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIo-o4-roS">
+                                        <rect key="frame" x="309" y="0.0" width="45" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RIo-o4-roS" secondAttribute="trailing" constant="30" id="njk-cj-INb"/>
+                                    <constraint firstItem="RIo-o4-roS" firstAttribute="leading" secondItem="jcg-Vu-zaT" secondAttribute="trailing" constant="175" id="reY-ez-yMb"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0EE-2b-Lh6">
+                                <rect key="frame" x="10" y="185" width="394" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzV-cE-vFe" secondAttribute="trailing" constant="30" id="0bN-c3-Thn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0EE-2b-Lh6" secondAttribute="bottom" constant="10" id="3pa-8F-AFb"/>
+                            <constraint firstItem="uJd-UB-Hmj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="MU8-Nj-WG4"/>
+                            <constraint firstItem="bzV-cE-vFe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="OJc-WT-7Nd"/>
+                            <constraint firstItem="uJd-UB-Hmj" firstAttribute="top" secondItem="bzV-cE-vFe" secondAttribute="bottom" constant="5" id="VqC-9x-jzf"/>
+                            <constraint firstItem="0EE-2b-Lh6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKh-Yo-fYM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6MZ-DU-sBi" secondAttribute="trailing" constant="30" id="bnL-Jd-WeX"/>
+                            <constraint firstItem="6MZ-DU-sBi" firstAttribute="top" secondItem="uJd-UB-Hmj" secondAttribute="bottom" constant="20" id="boL-bV-Uah"/>
+                            <constraint firstItem="0EE-2b-Lh6" firstAttribute="top" secondItem="6MZ-DU-sBi" secondAttribute="bottom" constant="5" id="brX-jL-QxL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0EE-2b-Lh6" secondAttribute="trailing" constant="10" id="el5-N6-AYw"/>
+                            <constraint firstItem="6MZ-DU-sBi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="evm-C8-Q3x"/>
+                            <constraint firstItem="0EE-2b-Lh6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hM2-tz-dWs"/>
+                            <constraint firstItem="uJd-UB-Hmj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lrP-hg-5YK"/>
+                            <constraint firstItem="bzV-cE-vFe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzl-sx-kaS"/>
+                            <constraint firstItem="bzV-cE-vFe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="u0n-AD-nnU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uJd-UB-Hmj" secondAttribute="trailing" constant="10" id="xem-OG-INC"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="fromMenu" destination="6wf-YD-Ryx" id="aZa-o6-aqi"/>
+                        <outlet property="swapButton" destination="CD6-mI-8iP" id="dzH-ni-s8A"/>
+                        <outlet property="tableView" destination="0EE-2b-Lh6" id="dIu-EG-hkB"/>
                         <outlet property="toMenu" destination="alJ-GJ-nEr" id="ROJ-bV-s2K"/>
                     </connections>
                 </viewController>
