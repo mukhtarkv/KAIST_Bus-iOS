@@ -1,0 +1,6 @@
+framework module Pods_KAIST_Bus_iOS {
+  umbrella header "Pods-KAIST_Bus-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
