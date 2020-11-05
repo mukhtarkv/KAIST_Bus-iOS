@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2D708848-3876-4A33-AAC7-37D7CF33E10A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C861B3B1-3BEE-47AC-9B2B-587B1631B064"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KAIST_Bus-iOS/View/TimetableCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "TimetableCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C861B3B1-3BEE-47AC-9B2B-587B1631B064 - 9f2dbe4d6750e388"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KAIST_Bus_iOS.TimetableCell.departureTimeLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "KAIST_Bus-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mukhtarkussaiynbekov/projects/KAIST_Bus-iOS/KAIST_Bus-iOS/View/TimetableCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C861B3B1-3BEE-47AC-9B2B-587B1631B064 - 437347ad6c950794"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KAIST_Bus_iOS.TimetableCell.departureTimeLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "KAIST_Bus-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mukhtarkussaiynbekov/projects/KAIST_Bus-iOS/KAIST_Bus-iOS/View/TimetableCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "C861B3B1-3BEE-47AC-9B2B-587B1631B064 - 3760d7a4537934de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KAIST_Bus_iOS.TimetableCell.departureTimeLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "KAIST_Bus-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mukhtarkussaiynbekov/projects/KAIST_Bus-iOS/KAIST_Bus-iOS/View/TimetableCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "C861B3B1-3BEE-47AC-9B2B-587B1631B064 - c868a44d37b1f10a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KAIST_Bus_iOS.TimetableCell.departureTimeLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "KAIST_Bus-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mukhtarkussaiynbekov/projects/KAIST_Bus-iOS/KAIST_Bus-iOS/View/TimetableCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "C861B3B1-3BEE-47AC-9B2B-587B1631B064 - bf20c6f8374e3167"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KAIST_Bus_iOS.TimetableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; KAIST_Bus_iOS.TimetableCell"
+                  moduleName = "KAIST_Bus-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mukhtarkussaiynbekov/projects/KAIST_Bus-iOS/KAIST_Bus-iOS/View/TimetableCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "341">
+               </Location>
+               <Location
+                  uuid = "C861B3B1-3BEE-47AC-9B2B-587B1631B064 - 795ee582b7b44acb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KAIST_Bus_iOS.TimetableCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;KAIST_Bus_iOS.TimetableCell&gt;"
+                  moduleName = "KAIST_Bus-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mukhtarkussaiynbekov/projects/KAIST_Bus-iOS/KAIST_Bus-iOS/View/TimetableCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "258">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12EAC2352553E26F00A596B4 /* MenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAC2342553E26F00A596B4 /* MenuContent.swift */; };
 		12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF36254ECF5A00B95855 /* AppDelegate.swift */; };
 		12F9BF39254ECF5A00B95855 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */; };
 		12F9BF3B254ECF5A00B95855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF3A254ECF5A00B95855 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		04FDF38CA7DE50CE38B1C038 /* Pods-KAIST_Bus-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAIST_Bus-iOS.release.xcconfig"; path = "Target Support Files/Pods-KAIST_Bus-iOS/Pods-KAIST_Bus-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		12EAC2342553E26F00A596B4 /* MenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContent.swift; sourceTree = "<group>"; };
 		12F9BF33254ECF5A00B95855 /* KAIST_Bus-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KAIST_Bus-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F9BF36254ECF5A00B95855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				12F9BF6F25501FDB00B95855 /* Timetable.swift */,
+				12EAC2342553E26F00A596B4 /* MenuContent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,7 +154,6 @@
 				1E25B0F8C8DFC4370EEE8F3B /* Pods-KAIST_Bus-iOS.debug.xcconfig */,
 				04FDF38CA7DE50CE38B1C038 /* Pods-KAIST_Bus-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -343,6 +345,7 @@
 				12F9BF7025501FDB00B95855 /* Timetable.swift in Sources */,
 				12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */,
 				12F9BF752550258D00B95855 /* constants.swift in Sources */,
+				12EAC2352553E26F00A596B4 /* MenuContent.swift in Sources */,
 				12F9BF39254ECF5A00B95855 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
