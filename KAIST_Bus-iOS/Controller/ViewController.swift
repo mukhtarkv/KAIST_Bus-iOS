@@ -27,6 +27,14 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         fromMenu.optionArray = ["Munji", "Hwaam", "Main"]
         toMenu.optionArray = ["Munji", "Hwaam", "Main"]
+        fromMenu.isSearchEnable = false
+        toMenu.isSearchEnable = false
+        fromMenu.placeholder = "Munji"
+        toMenu.placeholder = "Main"
+        fromMenu.text = "Munji"
+        toMenu.text = "Main"
+        fromMenu.selectedIndex = 0
+        toMenu.selectedIndex = 2
     }
 }
 
