@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,20 +48,22 @@
                                 <rect key="frame" x="10" y="109.5" width="394" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wf-YD-Ryx" customClass="DropDown" customModule="iOSDropDown">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-mI-8iP">
-                                        <rect key="frame" x="182" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="184.5" y="0.0" width="25" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="VQ1-ij-5Z9"/>
+                                            <constraint firstAttribute="width" constant="25" id="VQ1-ij-5Z9"/>
                                             <constraint firstAttribute="height" constant="30" id="mBy-J6-9Le"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="arrow.left.arrow.right.circle.fill" catalog="system"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="arrow.left.arrow.right.circle.fill" catalog="system" symbolScale="large"/>
+                                        </state>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-GJ-nEr" customClass="DropDown" customModule="iOSDropDown">
-                                        <rect key="frame" x="243" y="0.0" width="151" height="30"/>
+                                        <rect key="frame" x="240.5" y="0.0" width="153.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -94,7 +97,7 @@
                                     <constraint firstItem="RIo-o4-roS" firstAttribute="leading" secondItem="jcg-Vu-zaT" secondAttribute="trailing" constant="175" id="reY-ez-yMb"/>
                                 </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0EE-2b-Lh6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0EE-2b-Lh6">
                                 <rect key="frame" x="10" y="185" width="394" height="618"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
