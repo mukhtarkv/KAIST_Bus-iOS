@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12EAC2422554394B00A596B4 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12EAC2412554394B00A596B4 /* iOSDropDown.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		12F0FA8B25554CAF00D139EB /* DatabaseSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0FA8A25554CAF00D139EB /* DatabaseSetup.swift */; };
 		12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF36254ECF5A00B95855 /* AppDelegate.swift */; };
 		12F9BF39254ECF5A00B95855 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */; };
 		12F9BF3B254ECF5A00B95855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9BF3A254ECF5A00B95855 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		04FDF38CA7DE50CE38B1C038 /* Pods-KAIST_Bus-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAIST_Bus-iOS.release.xcconfig"; path = "Target Support Files/Pods-KAIST_Bus-iOS/Pods-KAIST_Bus-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		12EAC2412554394B00A596B4 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F0FA8A25554CAF00D139EB /* DatabaseSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSetup.swift; sourceTree = "<group>"; };
 		12F9BF33254ECF5A00B95855 /* KAIST_Bus-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KAIST_Bus-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F9BF36254ECF5A00B95855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F9BF38254ECF5A00B95855 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				12F9BF6F25501FDB00B95855 /* Timetable.swift */,
+				12F0FA8A25554CAF00D139EB /* DatabaseSetup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				12F9BF3B254ECF5A00B95855 /* ViewController.swift in Sources */,
 				12F9BF7B25502F0800B95855 /* TimetableCell.swift in Sources */,
+				12F0FA8B25554CAF00D139EB /* DatabaseSetup.swift in Sources */,
 				12F9BF7025501FDB00B95855 /* Timetable.swift in Sources */,
 				12F9BF37254ECF5A00B95855 /* AppDelegate.swift in Sources */,
 				12F9BF752550258D00B95855 /* constants.swift in Sources */,
