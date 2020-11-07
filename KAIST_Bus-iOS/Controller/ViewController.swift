@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var swapButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
-    
+    let campuses: [String] = [K.hwaam, K.munji, K.main]
     var timetable: [(String, String)] = Timetable.munjiToMainWeekends
     var weekends: Bool = true
     
@@ -25,16 +25,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
-        fromMenu.optionArray = ["Munji", "Hwaam", "Main"]
-        toMenu.optionArray = ["Munji", "Hwaam", "Main"]
-        fromMenu.isSearchEnable = false
-        toMenu.isSearchEnable = false
-        fromMenu.placeholder = "Munji"
-        toMenu.placeholder = "Main"
-        fromMenu.text = "Munji"
-        toMenu.text = "Main"
-        fromMenu.selectedIndex = 0
-        toMenu.selectedIndex = 2
+        menuSetUp(menu: fromMenu, placeholder: K.munji)
+        menuSetUp(menu: toMenu, placeholder: K.main)
+    }
+    
+    func menuSetUp(menu: DropDown!, placeholder: String) {
+        menu.optionArray = campuses
+        menu.isSearchEnable = false
+        menu.selectedIndex = campuses.firstIndex(of: placeholder)
     }
 }
 

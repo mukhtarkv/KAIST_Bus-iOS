@@ -54,3 +54,7 @@ func addTimetable(table: Table, leaveFrom: String, arriveAt: String, isWeekday: 
         }
     }
 }
+
+func getLeaveTime() {
+    
+}

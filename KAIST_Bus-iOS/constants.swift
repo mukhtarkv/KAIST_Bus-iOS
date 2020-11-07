@@ -11,6 +11,7 @@ struct K {
     static let appName = "KAIST Bus"
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "TimetableCell"
-    static let fromMenuPlaceHolder = "Munji"
-    static let toMenuPlaceHolder = "Campus"
+    static let munji = "Munji"
+    static let main = "Main"
+    static let hwaam = "Hwaam"
 }
