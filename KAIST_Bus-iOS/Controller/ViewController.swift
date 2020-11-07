@@ -32,7 +32,16 @@ class ViewController: UIViewController {
     func menuSetUp(menu: DropDown!, placeholder: String) {
         menu.optionArray = campuses
         menu.isSearchEnable = false
+        menu.placeholder = placeholder
+        menu.text = placeholder
         menu.selectedIndex = campuses.firstIndex(of: placeholder)
+    }
+    
+    
+    @IBAction func swapButtonPressed(_ sender: UIButton) {
+        swap(&fromMenu.selectedIndex, &toMenu.selectedIndex)
+        fromMenu.text = campuses[fromMenu.selectedIndex!]
+        toMenu.text = campuses[toMenu.selectedIndex!]
     }
 }
 

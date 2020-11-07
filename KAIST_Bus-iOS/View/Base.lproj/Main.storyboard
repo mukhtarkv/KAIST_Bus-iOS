@@ -61,6 +61,9 @@
                                         <state key="normal" title="Button">
                                             <imageReference key="image" image="arrow.left.arrow.right.circle.fill" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="swapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ko-7K-OYl"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-GJ-nEr" customClass="DropDown" customModule="iOSDropDown">
                                         <rect key="frame" x="240.5" y="0.0" width="153.5" height="30"/>
