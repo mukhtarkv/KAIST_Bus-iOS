@@ -28,7 +28,7 @@ let id = Expression<Int>("Indices")
 
 let stmtGetTimeOneTable = try! db.prepare("SELECT leave, arrive FROM (?)->(?) WHERE id = (?) AND isWeekday = (?)")
 
-func createTable(leaveFrom: String, arriveAt: String) -> Table {
+func createTable(leaveFrom: String, arriveAt: String, timetableWeekdays: [(String, String)], timetableWeekends: [(String, String)]) -> Table {
     let table = Table("\(leaveFrom)->\(arriveAt)")
     let leave = Expression<String>("leave")
     let arrive = Expression<String>("arrive")
@@ -43,27 +43,30 @@ func createTable(leaveFrom: String, arriveAt: String) -> Table {
     } catch {
         print(error)
     }
-    return table
-}
-
-let hwaamMunji = createTable(leaveFrom: K.hwaam, arriveAt: K.munji)
-let munjiMain = createTable(leaveFrom: K.munji, arriveAt: K.main)
-let mainMunji = createTable(leaveFrom: K.main, arriveAt: K.munji)
-let munjiHwaam = createTable(leaveFrom: K.munji, arriveAt: K.hwaam)
-
-func addTimetable(table: Table, leaveFrom: String, arriveAt: String, isWeekday: Bool, timetable: [(String, String)]) {
-    for i in 0..<timetable.count {
-        let leave = Expression<String>("Leave \(leaveFrom)")
-        let arrive = Expression<String>("Arrive \(arriveAt)")
-        
-        let insert = table.insert(id <- i, leave <- timetable[i].0, arrive <- timetable[i].1, weekday <- isWeekday)
+    for i in 0..<timetableWeekdays.count {
+        let insertWeekday = table.insert(id <- i, leave <- timetableWeekdays[i].0, arrive <- timetableWeekdays[i].1, weekday <- true)
         do {
-            let rowid = try db.run(insert)
+            try db.run(insertWeekday)
         } catch {
             print(error)
         }
     }
+    for i in 0..<timetableWeekdays.count {
+        let insertWeekend = table.insert(id <- i, leave <- timetableWeekends[i].0, arrive <- timetableWeekends[i].1, weekday <- false)
+        do {
+            try db.run(insertWeekend)
+        } catch {
+            print(error)
+        }
+    }
+    return table
 }
+
+//let hwaamMunji = createTable(leaveFrom: K.hwaam, arriveAt: K.munji)
+let munjiMain = createTable(leaveFrom: K.munji, arriveAt: K.main, timetableWeekdays: Timetable.munjiToMainWeekdays, timetableWeekends: Timetable.munjiToMainWeekends)
+let mainMunji = createTable(leaveFrom: K.main, arriveAt: K.munji, timetableWeekdays: Timetable.mainToMunjiWeekdays, timetableWeekends: Timetable.mainToMunjiWeekends)
+//let munjiHwaam = createTable(leaveFrom: K.munji, arriveAt: K.hwaam)
+
 
 func getTime(atRow: Int, leaveFrom: String, arriveAt: String, isWeekday: Bool) -> (String, String) {
     var time: (String, String)?
