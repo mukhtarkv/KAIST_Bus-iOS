@@ -14,22 +14,37 @@ class ViewController: UIViewController {
     @IBOutlet weak var toMenu: DropDown!
     @IBOutlet weak var swapButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
-    
-    let campuses: [String] = [K.hwaam, K.munji, K.main]
+
     var timetable: [(String, String)] = Timetable.munjiToMainWeekends
     var weekends: Bool = true
-    
+
+    var fromMenuOptions: [String] = campuses
+    var toMenuOptions: [String] = [K.hwaam, K.main]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         tableView.dataSource = self
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
-        menuSetUp(menu: fromMenu, placeholder: K.munji)
-        menuSetUp(menu: toMenu, placeholder: K.main)
+        menuSetUp(menu: fromMenu, placeholder: K.munji, options: fromMenuOptions)
+        menuSetUp(menu: toMenu, placeholder: K.main, options: toMenuOptions)
+        
+        fromMenu.didSelect{(selectedText, index, id) in
+            self.toMenu.optionArray = Array(campuses[..<index] + campuses[(index+1)...])
+            self.tableView.reloadData()
+        }
+        
+        toMenu.didSelect{(selectedText, index, id) in
+            self.toMenu.optionArray = self.slice(array: campuses, index: index)
+            self.tableView.reloadData()
+        }
     }
     
-    func menuSetUp(menu: DropDown!, placeholder: String) {
+    func slice(array: [String], index: Int) -> [String] {
+        return Array(array[..<index] + array[(index+1)...])
+    }
+    
+    func menuSetUp(menu: DropDown!, placeholder: String, options: [String]) {
         menu.optionArray = campuses
         menu.isSearchEnable = false
         menu.placeholder = placeholder
@@ -42,6 +57,7 @@ class ViewController: UIViewController {
         swap(&fromMenu.selectedIndex, &toMenu.selectedIndex)
         fromMenu.text = campuses[fromMenu.selectedIndex!]
         toMenu.text = campuses[toMenu.selectedIndex!]
+        tableView.reloadData()
     }
 }
 
