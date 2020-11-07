@@ -6,5 +6,4 @@ target 'KAIST_Bus-iOS' do
 
   # Pods for KAIST_Bus-iOS
   pod 'iOSDropDown'
-  pod 'SQLite.swift', '~> 0.12.0'
 end

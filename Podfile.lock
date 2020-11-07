@@ -1,22 +1,16 @@
 PODS:
   - iOSDropDown (0.3.4)
-  - SQLite.swift (0.12.2):
-    - SQLite.swift/standard (= 0.12.2)
-  - SQLite.swift/standard (0.12.2)
 
 DEPENDENCIES:
   - iOSDropDown
-  - SQLite.swift (~> 0.12.0)
 
 SPEC REPOS:
   trunk:
     - iOSDropDown
-    - SQLite.swift
 
 SPEC CHECKSUMS:
   iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
-  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
-PODFILE CHECKSUM: 8e0caa1e88cf41d7cfcba1cd8a5254add7638a73
+PODFILE CHECKSUM: 7a947212c3b5713ebb83a88ff7c17a5b7a54932e
 
 COCOAPODS: 1.10.0

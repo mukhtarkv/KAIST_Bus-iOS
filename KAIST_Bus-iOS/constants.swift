@@ -14,4 +14,6 @@ struct K {
     static let munji = "Munji"
     static let main = "Main"
     static let hwaam = "Hwaam"
+    static let weekday = "Weekday"
+    static let weekend = "Weekend"
 }
