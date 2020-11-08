@@ -19,21 +19,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch screen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wpf-se-DIw">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Created by Mukhtar Kussaiynbekov" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3IP-St-NJF" userLabel="End Credits">
-                                <rect key="frame" x="79" y="838" width="256" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Mukhtar Kussaiynbekov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJY-rY-ADE">
+                                <rect key="frame" x="72.5" y="821" width="269" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="IJY-rY-ADE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GgB-Qm-TTB"/>
                             <constraint firstItem="Wpf-se-DIw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kbv-yp-uPr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wpf-se-DIw" secondAttribute="bottom" id="MXe-t1-DN2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wpf-se-DIw" secondAttribute="trailing" id="MnY-Mq-fX5"/>
                             <constraint firstItem="Wpf-se-DIw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xuf-62-TOP"/>
-                            <constraint firstItem="3IP-St-NJF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="ZaX-oP-Gv0"/>
-                            <constraint firstItem="3IP-St-NJF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="k3Q-MN-IN9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IJY-rY-ADE" secondAttribute="bottom" constant="20" id="sOB-hb-k4m"/>
                         </constraints>
                     </view>
                 </viewController>
